@@ -1,0 +1,46 @@
+-generatori
+--dajake uzke hrdlo vzorec - LCG
+Xi = (aXi-1 +c) mod m
+a (multiplikator), c prirustok a m modul
+X0 5, a=2 c=5 m=6;
+X1 = (2*5 + 5) mod 6; = 3
+X2 = (2*3 +5) mod 6; = 5;
+X3 = (2*5 +5) mod 6 ;= 3;
+-- chatgpt pri milione dojebe to bacha
+-- 0patri 1nepatri , nieje dovolene vytvorit viackrat -- kvalitna nasada - random rnd nasad = new random()
+                                                                            empirical rnd1 daco = new empirical (rnd nasad)
+                                                                            --dobre na ladanie ak si dam rovnaku nasadu
+nazaciatku nie nanovo, vzdy na 1 jav 1sposob, treba mat nasadu a nezahadzovat cisla a nejaky interval.
+--semka :
+--trieda SimJadro ona ma v sebe simulate ktory ma for cyklus. -
+{ ==metoda experiment.
+== beforeSim, --vytvorenie gen
+ afterSim, zbieranie vysledkov
+ beforeRep,
+  afterRep,
+} abstract
+ono bude mat potomkov
+
+musi sa to dat spustit a ukoncit --druhe vlakno ako gui
+--moznost nastavit N- replikacii
+
+v maine zavolame simulate
+--graf realtime - nevypisovat kazdu hodnotu/ale ze napr 1k na grafe cize kazdu x..... nemoze sa spomalovat --cize ten inyvzorec a ta premenna
+--dajaky komulativny priemer vykreslovat a priebezne sa ma to robit ne pole
+--odfiltrovat bud 10% z replikacii alebo dat do GUI / y os autoscale  v JFREECHART je funkcia dajaka
+
+--minimalne 2 zalezi ci su zavisle
+1uniform pre kazdeho dodavatela == 2uniform pre zistenie tej pravdepodobnosti
+trieda empiricky spojity kde to napcham v konstruktore nemoze byt 5lebo mozu byt aj 4 aj 3 ///////
+
+--gen--
+bud predok co ma metodu alebo nextint... generator predok asi a on ma potomka
+---------------------------------------------------------------------------------------------------------------------------CV2/3
+// v inputa analyzeri spravit nech to vyzera spravne ....
+//tote nasady bud singleton abo daco
+// v grafe x pocet hodnot v real case
+// GUI pocet replikaci, stopnut
+strateguía zo suboru -- pre kezdy tyzden urcit
+
+--vlakna cez swingworkera
+dokumentacia grafy, priemery, UML, architektura, tabulka so strategiami, test generatorov
